@@ -1,10 +1,13 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.maxlord.navigationtest.R
+import com.maxlord.navigationtest.base.BaseFragment
 import com.maxlord.navigationtest.databinding.BlankFragment2FragmentBinding
+import com.maxlord.navigationtest.common.fragmentViewModel
 import kotlinx.android.synthetic.main.blank_fragment2_fragment.*
 
 

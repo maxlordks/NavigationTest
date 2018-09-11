@@ -1,4 +1,4 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.common
 
 import android.annotation.SuppressLint
 import androidx.fragment.app.Fragment

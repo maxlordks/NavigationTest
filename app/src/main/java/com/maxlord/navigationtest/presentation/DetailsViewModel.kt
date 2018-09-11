@@ -1,8 +1,9 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.presentation
 
 import android.os.Bundle
-import androidx.lifecycle.ViewModel;
 import com.airbnb.mvrx.MvRxState
+import com.maxlord.navigationtest.DetailsArgs
+import com.maxlord.navigationtest.base.BaseViewModel
 
 class DetailsViewModel (initialState: DetailsState) : BaseViewModel<DetailsState>(initialState) {
     init {

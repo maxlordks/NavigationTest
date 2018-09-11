@@ -1,4 +1,4 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.presentation
 
 import androidx.lifecycle.ViewModel;
 

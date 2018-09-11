@@ -1,9 +1,10 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.airbnb.mvrx.fragmentViewModel
+import com.maxlord.navigationtest.base.BaseFragment
 import com.maxlord.navigationtest.databinding.BlankFragmentBinding
 
 

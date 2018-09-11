@@ -1,6 +1,6 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.presentation
 
-import androidx.lifecycle.ViewModel;
+import com.maxlord.navigationtest.base.BaseViewModel
 
 class BlankFragment2ViewModel (initialState: HelloWorldCounter) : BaseViewModel<HelloWorldCounter>(initialState) {
     // TODO: Implement the ViewModel

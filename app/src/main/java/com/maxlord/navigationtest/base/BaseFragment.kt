@@ -1,4 +1,4 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.base
 
 import android.os.Bundle
 import android.util.Log
@@ -11,6 +11,10 @@ import androidx.navigation.findNavController
 import com.airbnb.mvrx.BaseMvRxFragment
 import com.airbnb.mvrx.MvRxState
 import com.airbnb.mvrx.withState
+import com.maxlord.navigationtest.BR
+import com.maxlord.navigationtest.R
+import com.maxlord.navigationtest.common.observeEvent
+import com.maxlord.navigationtest.common.toast
 
 abstract class BaseFragment<S : MvRxState, VM : BaseViewModel<S>, B : ViewDataBinding> : BaseMvRxFragment() {
     protected abstract val viewModel: VM //by fragmentViewModel()

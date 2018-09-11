@@ -5,18 +5,18 @@
 
         <variable
             name="vms"
-            type="com.maxlord.navigationtest.DetailsState" />
+            type="com.maxlord.navigationtest.presentation.DetailsState" />
 
         <variable
             name="vm"
-            type="com.maxlord.navigationtest.DetailsViewModel" />
+            type="com.maxlord.navigationtest.presentation.DetailsViewModel" />
     </data>
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Details">
+        tools:context=".presentation.Details">
 
         <TextView
             android:layout_width="match_parent"

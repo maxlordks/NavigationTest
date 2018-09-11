@@ -6,7 +6,7 @@
     app:startDestination="@id/bottomNavFragment2">
     <fragment
         android:id="@+id/bottomNavFragment2"
-        android:name="com.maxlord.navigationtest.BottomNavFragment"
+        android:name="com.maxlord.navigationtest.presentation.BottomNavFragment"
         android:label="fragment_bottom_nav"
         tools:layout="@layout/fragment_bottom_nav" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/details2"
-        android:name="com.maxlord.navigationtest.Details"
+        android:name="com.maxlord.navigationtest.presentation.Details"
         android:label="details_fragment"
         tools:layout="@layout/details_fragment" >
         <argument
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/enterDetailsFragment"
-        android:name="com.maxlord.navigationtest.EnterDetailsFragment"
+        android:name="com.maxlord.navigationtest.presentation.EnterDetailsFragment"
         android:label="enter_details_fragment"
         tools:layout="@layout/enter_details_fragment" />
 </navigation>

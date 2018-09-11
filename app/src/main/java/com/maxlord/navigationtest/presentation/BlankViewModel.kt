@@ -1,6 +1,9 @@
-package com.maxlord.navigationtest
+package com.maxlord.navigationtest.presentation
 
 import com.airbnb.mvrx.MvRxState
+import com.maxlord.navigationtest.BottomNavFragmentDirections
+import com.maxlord.navigationtest.common.Event
+import com.maxlord.navigationtest.base.BaseViewModel
 
 class BlankViewModel(initialState: HelloWorldCounter) : BaseViewModel<HelloWorldCounter>(initialState) {
 
