@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.maxlord.navigationtest.BlankFragment"
+        android:label="blank_fragment"
+        tools:layout="@layout/blank_fragment" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.maxlord.navigationtest.BlankFragment2"
+        android:label="blank_fragment2_fragment"
+        tools:layout="@layout/blank_fragment2_fragment" />
+    <fragment
+        android:id="@+id/blankFragment3"
+        android:name="com.maxlord.navigationtest.BlankFragment3"
+        android:label="blank_fragment3_fragment"
+        tools:layout="@layout/blank_fragment3_fragment" />
+    <fragment
+        android:id="@+id/blankFragment4"
+        android:name="com.maxlord.navigationtest.BlankFragment4"
+        android:label="blank_fragment4_fragment"
+        tools:layout="@layout/blank_fragment4_fragment" />
+    <fragment
+        android:id="@+id/blankFragment5"
+        android:name="com.maxlord.navigationtest.BlankFragment5"
+        android:label="blank_fragment5_fragment"
+        tools:layout="@layout/blank_fragment5_fragment" />
+</navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="vms"
+            type="com.maxlord.navigationtest.HelloWorldCounter"/>
+        <variable
+            name="vm"
+            type="com.maxlord.navigationtest.BlankViewModel"/>
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BlankFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        tools:text="Count demo"
+        android:text='@{"Count: "+vms.count}' />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="inc"
+        android:onClick="@{()->vm.inc()}"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:onClick="@{()->vm.details()}"
+        />
+
+</LinearLayout>
+</layout>

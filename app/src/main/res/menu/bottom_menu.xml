@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/blankFragment"
+        android:title="A1"
+        android:icon="@drawable/ic_android_black_24dp" />
+    <item android:id="@id/blankFragment2"
+        android:title="a2"
+        android:icon="@drawable/ic_android_black_24dp" />
+    <item android:id="@+id/blankFragment3"
+        android:title="a3"
+        android:icon="@drawable/ic_android_black_24dp" />
+    <item android:id="@+id/blankFragment4"
+        android:title="a4"
+        android:icon="@drawable/ic_android_black_24dp" />
+    <item android:id="@+id/blankFragment5"
+        android:title="a5"
+        android:icon="@drawable/ic_android_black_24dp" />
+</menu>
