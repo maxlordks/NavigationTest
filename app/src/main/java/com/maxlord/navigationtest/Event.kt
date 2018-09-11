@@ -1,5 +1,7 @@
 package com.maxlord.navigationtest
 
+import androidx.navigation.NavDirections
+
 open class Event<out T>(private val content: T) {
 
     var hasBeenHandled = false
@@ -22,3 +24,5 @@ open class Event<out T>(private val content: T) {
      */
     fun peekContent(): T = content
 }
+
+typealias NavEvent = Event<NavDirections>

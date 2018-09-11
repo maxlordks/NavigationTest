@@ -1,30 +1,23 @@
 package com.maxlord.navigationtest
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.maxlord.navigationtest.databinding.BlankFragment2FragmentBinding
+import kotlinx.android.synthetic.main.blank_fragment2_fragment.*
 
 
-class BlankFragment2 : Fragment() {
+class BlankFragment2 : BaseFragment<HelloWorldCounter, BlankFragment2ViewModel, BlankFragment2FragmentBinding>() {
+    override fun createBinding(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) = BlankFragment2FragmentBinding.inflate(inflater, container, false)
 
-    companion object {
-        fun newInstance() = BlankFragment2()
+    override val viewModel: BlankFragment2ViewModel by fragmentViewModel()
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        enterName.setOnClickListener {
+            requireActivityNavigator().navigate(R.id.enterDetailsFragment)
+        }
     }
-
-    private lateinit var viewModel: BlankFragment2ViewModel
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.blank_fragment2_fragment, container, false)
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(BlankFragment2ViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
 }
