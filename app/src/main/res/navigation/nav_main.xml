@@ -7,8 +7,8 @@
     <fragment
         android:id="@+id/bottomNavFragment2"
         android:name="com.maxlord.navigationtest.presentation.BottomNavFragment"
-        android:label="fragment_bottom_nav"
-        tools:layout="@layout/fragment_bottom_nav" >
+        android:label="Home"
+        tools:layout="@layout/fragment_bottom_nav">
         <action
             android:id="@+id/action_bottomNavFragment2_to_details2"
             app:destination="@id/details2" />
@@ -27,4 +27,15 @@
         android:name="com.maxlord.navigationtest.presentation.EnterDetailsFragment"
         android:label="enter_details_fragment"
         tools:layout="@layout/enter_details_fragment" />
+    <fragment
+        android:id="@+id/commonErrorFragment"
+        android:name="com.maxlord.navigationtest.presentation.CommonErrorFragment"
+        android:label="Oups!! Something wrong!"
+        tools:layout="@layout/common_error_fragment">
+        <argument
+            android:name="message"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <action android:id="@+id/action_global_commonErrorFragment" app:destination="@id/commonErrorFragment" />
 </navigation>

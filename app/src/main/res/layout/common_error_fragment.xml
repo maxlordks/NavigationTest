@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="vms"
+            type="com.maxlord.navigationtest.presentation.CommonErrorState" />
+
+        <variable
+            name="vm"
+            type="com.maxlord.navigationtest.presentation.CommonErrorViewModel" />
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.CommonErrorFragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@{vms.message}" />
+
+    </FrameLayout>
+</layout>

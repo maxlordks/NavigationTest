@@ -6,6 +6,7 @@ import androidx.navigation.NavDirections
 import com.airbnb.mvrx.BaseMvRxViewModel
 import com.airbnb.mvrx.MvRxState
 import com.maxlord.navigationtest.BuildConfig
+import com.maxlord.navigationtest.NavMainDirections
 import com.maxlord.navigationtest.common.Event
 import com.maxlord.navigationtest.common.NavEvent
 
@@ -21,4 +22,9 @@ abstract class BaseViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel
 
 
     protected fun navigate(dir: NavDirections) = _navigator.postValue(NavEvent(dir))
+
+    @JvmOverloads //added for test call from button
+    fun error(message: String = "Something happened!!") = withState {
+        navigate(NavMainDirections.actionGlobalCommonErrorFragment(message))
+    }
 }
