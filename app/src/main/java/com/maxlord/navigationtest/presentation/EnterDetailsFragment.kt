@@ -10,7 +10,7 @@ import com.maxlord.navigationtest.common.fragmentViewModel
 import kotlinx.android.synthetic.main.enter_details_fragment.*
 
 
-class EnterDetailsFragment : BaseFragment<HelloWorldCounter, EnterDetailsViewModel, EnterDetailsFragmentBinding>() {
+class EnterDetailsFragment : BaseFragment<EnterDetailsState, EnterDetailsViewModel, EnterDetailsFragmentBinding>() {
     override fun createBinding(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) = EnterDetailsFragmentBinding.inflate(inflater, container, false)
     override val viewModel: EnterDetailsViewModel by fragmentViewModel()
 
