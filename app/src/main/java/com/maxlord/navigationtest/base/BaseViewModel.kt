@@ -9,10 +9,13 @@ import com.maxlord.navigationtest.BuildConfig
 import com.maxlord.navigationtest.NavMainDirections
 import com.maxlord.navigationtest.common.Event
 import com.maxlord.navigationtest.common.NavEvent
+import org.kodein.di.Kodein
+import org.kodein.di.KodeinAware
 
-abstract class BaseViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S>(initialState, debugMode = BuildConfig.DEBUG) {
+abstract class BaseViewModel<S : MvRxState>(initialState: S) : BaseMvRxViewModel<S>(initialState, debugMode = BuildConfig.DEBUG), KodeinAware {
     private val _navigator = MutableLiveData<NavEvent>()
     protected val _toast = MutableLiveData<Event<String>>()
+    override lateinit var kodein: Kodein
 
     val navigator : LiveData<NavEvent>
         get() = _navigator
